@@ -87,8 +87,10 @@
   <li>Uninstalling the app removes this data.</li>
 </ul>
 <p>
-  A backup you export yourself contains your library and settings. Where you store or share that
-  file is your decision; the app's provider does not receive it.
+  A backup you export yourself contains your library and settings and is encrypted with a password
+  you choose (PBKDF2 with 210,000 iterations, then AES-GCM). Without that password the file cannot
+  be restored — not by the app's provider either. Where you store or share the file is your
+  decision; the app's provider does not receive it.
 </p>
 
 <h2>4. Connections to your providers</h2>
@@ -121,7 +123,8 @@
   decline, no advertising is loaded and the app remains fully usable.
 </p>
 <p>
-  You can change or withdraw your decision at any time via the privacy settings entry in the app menu.
+  You can change or withdraw your decision at any time in the app under
+  <em>Settings → Ad privacy</em>.
 </p>
 <p>
   Google is the controller for the processing carried out by AdMob. Details:
@@ -163,28 +166,55 @@
   not carried over automatically to a new device.
 </p>
 
-<h2>10. Children</h2>
+<h2>10. Legal bases</h2>
+<p>Where the app's provider processes anything at all, the following applies:</p>
+<ul>
+  <li><strong>Advertising and access to the advertising ID (Free only)</strong> — your consent under
+    Art. 6(1)(a) GDPR and § 25(1) TDDDG. Without consent the advertising SDK is not started.</li>
+  <li><strong>Connecting to your own sources</strong> — performance of the contract of use under
+    Art. 6(1)(b) GDPR. Connections are made only to addresses you enter yourself.</li>
+  <li><strong>Local storage on the device</strong> — this data does not leave your device and is not
+    processed by the app's provider.</li>
+</ul>
+<p>
+  <strong>Transfers to third countries:</strong> If you consent to advertising, Google may also
+  process data outside the European Union, in particular in the United States. Google relies on the
+  EU-US Data Privacy Framework and on standard contractual clauses under Art. 46 GDPR.
+</p>
+
+<h2>11. Retention</h2>
+<p>
+  Locally stored data remains on the device until you delete it in the app, clear the app's data via
+  system settings, or uninstall the app. No data is retained by the app's provider. How long Google
+  retains advertising data is governed by Google's own terms.
+</p>
+
+<h2>12. Children</h2>
 <p>
   The app is not directed at children and does not knowingly collect data from children. A
   PIN-protected parental control feature is available and works locally on the device.
 </p>
 
-<h2>11. Your rights</h2>
+<h2>13. Your rights</h2>
 <p>
-  Under the General Data Protection Regulation you have the right of access, rectification, erasure,
-  restriction of processing, data portability and objection, as well as the right to withdraw consent
-  at any time with effect for the future.
+  Under the General Data Protection Regulation you have the right of access (Art. 15), rectification
+  (Art. 16), erasure (Art. 17), restriction of processing (Art. 18), data portability (Art. 20) and
+  objection (Art. 21), as well as the right to withdraw consent at any time with effect for the
+  future (Art. 7(3)).
 </p>
 <p>
-  As the app's provider stores no personal data about you, advertising-related requests can be
-  directed to Google. For locally stored data: you erase it by clearing the app's data or
-  uninstalling the app.
+  The app's provider operates no user account and stores no information by which a request could be
+  attributed to a particular person; Art. 11 GDPR applies accordingly. Requests concerning processing
+  within AdMob are best addressed directly to Google. Locally stored data you erase yourself by
+  clearing the app's data or uninstalling the app. You withdraw your advertising consent under
+  <em>Settings → Ad privacy</em>.
 </p>
 <p>
-  You also have the right to lodge a complaint with a data protection supervisory authority.
+  You may lodge a complaint with a data protection supervisory authority. The competent authority is
+  the Hamburg Commissioner for Data Protection and Freedom of Information.
 </p>
 
-<h2>12. Changes to this policy</h2>
+<h2>14. Changes to this policy</h2>
 <p>
   This policy is updated when the app changes. The version published at this address, with the date
   stated above, is the applicable one.
