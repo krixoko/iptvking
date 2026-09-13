@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>IPTV KING – foreground service demonstration</title>
+<style>body{font:18px system-ui;max-width:850px;margin:32px auto;padding:0 20px;background:#101725;color:#eee}a{color:#edcf82}video{display:block;max-width:100%;max-height:75vh;margin:24px auto}li{margin:12px 0}</style>
+<h1>Recording demonstration</h1>
+<p>IPTV KING Free 0.3.0 (version code 3), Android 15. Evidence for Google Play's FOREGROUND_SERVICE_DATA_SYNC declaration, captured on 13 September 2026.</p>
+<video controls preload="metadata" src="foreground-service-demo.mp4">Your browser cannot play this video.</video>
+<p><a href="foreground-service-demo.mp4">Open or download the MP4</a></p>
+<ol>
+<li>The user selects a source imported into the app and opens the player.</li>
+<li>The user opens the recording dialog and chooses “Record for 15 minutes”.</li>
+<li>The user leaves the player and the app. The download continues with an ongoing notification: “IPTV KING is recording”.</li>
+<li>The user expands the notification and presses “Stop”. The recording notification disappears.</li>
+</ol>
+<p>The video uses a locally generated FFmpeg test pattern, not third-party television content. This source was manually imported for the demonstration and is not bundled with the app. The foreground service downloads the selected stream into private app storage. It does not capture the screen or microphone. Delaying a live-stream recording would lose the corresponding live content.</p>
+<p>Only idle lead-in time was trimmed and video resolution reduced. The demonstrated app actions retain their original order.</p>
+<p><a href="en.html">Privacy and provider information</a></p>
+</html>
